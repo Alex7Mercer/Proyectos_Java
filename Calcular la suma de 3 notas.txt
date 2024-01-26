@@ -1,0 +1,31 @@
+    public static void main(String[] args) {
+        Scanner Entrada = new Scanner(System.in);
+        float numero1,numero2,numero3,suma;
+        
+        /* // Forma mia de solucionar.
+        System.out.println("Favor ingrese la numa #1: "); 
+        numero1 = Entrada.nextFloat();
+        System.out.println("Favor ingrese la numa #2: ");
+        numero2 = Entrada.nextFloat();
+        System.out.println("Favor ingrese la numa #3: ");
+        numero3 = Entrada.nextFloat();
+           
+        
+        
+        suma = numero1+numero2+numero3;
+        
+        System.out.println("La suma de los numeros ingresados es: "+suma);
+       */ 
+       
+        
+       
+        
+        /* Forma de Alejandro de solucionar.
+        System.out.println("Favor ingrese tres notas: ");
+        numero1 = Entrada.nextFloat();
+        numero2  Entrada.nextFloat();
+        numero3 = Entrada.nextFloat();
+        
+        suma = numero1+numero2+numero3;
+        
+        System.out.println("La suma de las notas es: "+suma);

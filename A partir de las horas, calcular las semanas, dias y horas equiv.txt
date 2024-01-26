@@ -1,0 +1,23 @@
+/* 
+Construir un programa que, dado un numero total de horas, devuelve el numero 
+de semanas, dias y horas equivalentes.
+        
+Por ejemplo dado un total de 1000 horas debe mostrar 5 semanas, 6 dias y 16 horas.        
+*/
+       
+        Scanner Entrada = new Scanner(System.in);
+        int Cant_horas, weeks, days, hours;
+        
+       
+        System.out.print("Ingrese la cantidad de horas: ");
+        Cant_horas = Entrada.nextInt();
+        
+        weeks = Cant_horas/168;
+        days = Cant_horas%168 /24;
+        hours = Cant_horas%24;
+        
+        System.out.print("\nlas horas ingresadas corresponden a: ");
+        System.out.print("\nweeks: " +weeks);
+        System.out.print("\nDays: " +days);
+        System.out.print("\nHours: " +hours);
+        System.out.println("");

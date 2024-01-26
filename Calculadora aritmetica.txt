@@ -1,0 +1,42 @@
+        /* 
+        Construir un programa que simule el funcionamiento de una calculadora
+        que puede realizar las cuatro operaciones aritmeticas, básicvas (suma, resta, produecto y división) con valores numericos
+        enteros. El usuario debe especificar la operación con el primer caracter del primer parametro de la linea de comandos: 
+        S o s para suma.
+        R o r para Resta.
+        D, d m o M para Multiplicación.
+        D y d para división.
+        */
+        
+        int num1, num2, suma, resta, mult, div; 
+        char operacion;
+        
+        num1 = Integer.parseInt(JOptionPane.showInputDialog("Favor ingrese el primer número: "));
+        num2 = Integer.parseInt(JOptionPane.showInputDialog("Favor ingrese el primer número: "));
+        
+        operacion = JOptionPane.showInputDialog("Favor Digite la operación que desea realizar: ").charAt(0);
+        
+        switch(operacion){
+            case 's':
+            case 'S': suma = num1+num2;
+                    JOptionPane.showMessageDialog(null, "La suma es: " +suma);
+                    break;
+            case 'r':
+            case 'R': resta = num1-num2;
+                    JOptionPane.showMessageDialog(null, "La suma es: " +resta);
+                    break;
+                
+            case 'P':
+            case 'p':
+            case 'm':
+            case 'M': mult = num1*num2;
+                    JOptionPane.showMessageDialog(null, "La multiplicación es: " +mult);
+                    break;
+                    
+            case 'd':
+            case 'D': div = num1/num2;
+                    JOptionPane.showMessageDialog(null, "La suma es: " +div);
+                    break;        
+                    
+            default: JOptionPane.showMessageDialog(null, "Favor ingrese una operación valida");break;
+        }

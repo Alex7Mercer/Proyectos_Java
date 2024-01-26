@@ -1,0 +1,37 @@
+        /*Hacer un programa que pase de Kg a otra unidad de medida de masa, 
+        mostrar en pantalla un menu con las opciones posibles*/
+        
+        float Medida;
+        int Opcion;
+        
+        Medida = Float.parseFloat(JOptionPane.showInputDialog("Digite la cantidad de kilogramos"));
+        
+        Opcion = Integer.parseInt(JOptionPane.showInputDialog("Menu\n"
+                + "1. Hectorgramo\n"
+                + "2. Decagramo\n"
+                + "3. Gramo\n"
+                + "4. Decigramo\n"
+                + "5. Centigramo\n"
+                + "6. Miligramo\n"));
+        
+        switch(Opcion){
+            case 1: Medida*=10;
+            JOptionPane.showMessageDialog(null, "La nueva medida en Hectogramos es de: "+Medida);
+                break;
+            case 2: Medida*=100;
+            JOptionPane.showMessageDialog(null, "La nueva medida en Decagramos es de: "+Medida);
+                break;
+            case 3: Medida*=1000;
+            JOptionPane.showMessageDialog(null, "La nueva medida en gramos es de: "+Medida);
+                break;
+            case 4: Medida*=10000;
+            JOptionPane.showMessageDialog(null, "La nueva medida en Decigramo es de: "+Medida);
+                break;
+            case 5: Medida*=100000;
+            JOptionPane.showMessageDialog(null, "La nueva medida en Centigramo es de: "+Medida);
+                break;
+            case 6: Medida*=1000000;
+            JOptionPane.showMessageDialog(null, "La nueva medida en Miligramo es de: "+Medida);
+                break;
+            default: JOptionPane.showMessageDialog(null, "Haz ingresado una opción incorrecta");
+        }

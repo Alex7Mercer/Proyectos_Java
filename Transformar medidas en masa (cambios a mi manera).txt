@@ -1,0 +1,30 @@
+        /*Hacer un programa que pase de Kg a otra unidad de medida de masa, 
+        mostrar en pantalla un menu con las opciones posibles*/
+        
+        float Medida, Hecto, Deca, Gramo, Deci, Centi, Mili;
+        int Opcion;
+        
+        Medida = Float.parseFloat(JOptionPane.showInputDialog("Digite la cantidad de kilogramos"));
+        
+        JOptionPane.showMessageDialog(null, "Menu"
+                + "Hectorgramo\n"
+                + "2. Decagramo\n"
+                + "3. Gramo\n"
+                + "4. Decigramo\n"
+                + "5. Centigramo\n"
+                + "6. Miligramo\n");
+        
+        Hecto = Medida*=10;
+        Deca = Medida*=100;
+        Gramo = Medida*=1000;
+        Deci = Medida*=10000;
+        Centi = Medida*=100000;
+        Mili = Medida*=1000000;
+        
+        JOptionPane.showMessageDialog(null, "la cantidad de kilogramos ingresados corresponde a:\n\n"
+                + "1. Hectorgramo: " +Hecto+ "\n"
+                + "2. Decagramo: " +Deca+ "\n"
+                + "3. Gramo: " +Gramo+ "\n"
+                + "4. Decigramo: " +Deci+ "\n"
+                + "5. Centigramo: " +Centi+ "\n"
+                + "6. Miligramo: " +Mili+ "\n");

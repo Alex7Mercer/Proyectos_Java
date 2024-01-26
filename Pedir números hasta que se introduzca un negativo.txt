@@ -1,0 +1,13 @@
+/*
+        Pedir números hasta que se teclee uno negativo, y mostrar cuantos números
+        se han introducido.
+ */
+     int numero, Count=0, Result;  
+       
+     numero = Integer.parseInt(JOptionPane.showInputDialog("Favor ingrese un número: "));
+     
+     while(numero>=0){ //  Mientras número sea diferente a cero.
+         Count ++;
+         numero = Integer.parseInt(JOptionPane.showInputDialog("Favor ingrese otrp número: "));
+     }
+     Result =   Integer.parseInt(JOptionPane.showInputDialog("La cantiodad de numeros ingresado es: "+Count+" ")); 

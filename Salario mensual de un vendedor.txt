@@ -1,0 +1,27 @@
+    public static void main(String[] args) {
+        /*
+        Una compañia de ventas de carros usados, paga a su personal de ventas un salario 
+        de $1000 mensuales, más una comisión de $150 por cada carro vendido, más
+        el 5% del valor de la venta del carro, cada mes el capturista de la empresa
+        ingresa en la PC los datos pertinentes.
+        
+        Hacer un programa que imprima y calcule el salario mesual de un vendedor dado.
+        
+|       */
+        
+        Scanner Entrada = new Scanner(System.in);
+        int Carros_Vend, sueldo;
+        float valor_Carro,comision, Porcentaje, Suma;
+        
+        System.out.print("Ingrese la cantidad de carros vendidos: ");
+        Carros_Vend = Entrada.nextInt();
+        
+        System.out.print("Ingrese el promedio del valor del autovendido: ");
+        valor_Carro = Entrada.nextFloat();
+        
+        sueldo = 1000;
+        Porcentaje = Carros_Vend*150;
+        comision = 0.05f*valor_Carro*Carros_Vend;
+        Suma = sueldo+Carros_Vend+comision+Porcentaje;
+        
+        System.out.print("la cantidad de dinero que ganaras este mes es de: "+Suma);

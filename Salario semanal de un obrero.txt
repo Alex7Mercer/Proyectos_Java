@@ -1,0 +1,34 @@
+
+        /* 
+        Un obrero necesita calcular su salario semanal, el cual se obtiene de la siguiente manera
+      
+        - Si trabaja 40 horas o menos se le paga $16 por hora.
+        
+        - Si trabaja más de 40 horas se le paga $16 por cada una
+        de las primeras 40 hopras y $20por cada hora extra.
+        */
+        
+        
+            // Número de horas trabajadas durante la semana
+    int horasTrabajadas;
+    
+    horasTrabajadas = Integer.parseInt(JOptionPane.showInputDialog("Favor ingrese la cantidad de horas trabajadas por el trabajador: "));
+
+    // Salario por hora para las primeras 40 horas
+    int salarioHora = 16;
+
+    // Salario por hora extra
+    int salarioHoraExtra = 20;
+
+    // Salario semanal inicial (para las primeras 40 horas)
+    int salarioSemanal = 40 * salarioHora;
+
+    // Si se han trabajado más de 40 horas, se añaden las horas extras al salario
+    if (horasTrabajadas > 40) {
+      int horasExtras = horasTrabajadas - 40;
+      int salarioHorasExtras = horasExtras * salarioHoraExtra;
+      salarioSemanal += salarioHorasExtras;
+    }
+
+    // Se muestra el salario semanal final
+    System.out.println("Salario semanal: $" + salarioSemanal);

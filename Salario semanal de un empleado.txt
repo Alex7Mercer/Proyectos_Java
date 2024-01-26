@@ -1,0 +1,15 @@
+    public static void main(String[] args) {
+        Scanner Entrada = new Scanner(System.in);
+        float Cant_Val_Semana,valorHora, Total;
+        
+        System.out.println("Ingrese la cantidad de horas trabajadas en la semana uno: ");
+        Cant_Val_Semana = Entrada.nextFloat();
+        
+        System.out.println("Ingrese el valor de la su hora: ");
+        valorHora = Entrada.nextFloat();
+        
+        Total = Cant_Val_Semana*valorHora; 
+       
+        
+        System.out.println("Su dinero ganado en la semana fue de: "+Total);
+

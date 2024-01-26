@@ -1,0 +1,15 @@
+ Leer un numero e indicar si el positivo o negativo
+        El numero se debe repetir hasta qye se introduzca cero (0)
+*/ 
+     int numero, resultado;
+     
+     numero = Integer.parseInt(JOptionPane.showInputDialog("Digite un número: ")); 
+     
+     while(numero != 0 ) { // Si el numero es diferente a cero
+            if(numero>0){
+                System.out.println("El numero "+numero+" es positivo");    
+            }
+            else{
+                System.out.println("El numero es negativo: ");
+            }
+            numero = Integer.parseInt(JOptionPane.showInputDialog("Digite un número: "));

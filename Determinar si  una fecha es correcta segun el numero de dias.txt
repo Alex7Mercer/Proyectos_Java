@@ -1,0 +1,28 @@
+       /* Pedir el día, mes y año de una fecha e indicar si la fecha es correcta.
+        suponiendo que todos los meses son de 30 dias.
+        */
+        
+        int día, mes, año; 
+        
+        día = Integer.parseInt(JOptionPane.showInputDialog("Favor ingrese el día: "));
+        mes = Integer.parseInt(JOptionPane.showInputDialog("Favor ingrese el mes: "));       
+        año = Integer.parseInt(JOptionPane.showInputDialog("Favor ingrese el año: "));       
+
+        
+        if ((día>=1) && (día<30)){ // Si el día es correcto
+            if((mes>1) && (mes<12)) { // si el mes es correcto
+                if(año!=0){
+                    JOptionPane.showMessageDialog(null, "Fecha incorrecta");
+                }
+                else{
+                    JOptionPane.showMessageDialog(null, "Fecha incorrecta, Año incorrecto");   
+                }
+            }    
+            else {
+                    JOptionPane.showMessageDialog(null, "Fecha incorrecta, mes incorrecto");    
+            }
+        }    
+        else {  
+            JOptionPane.showMessageDialog(null, "Fecha incorrecta, Día incorrecto");
+           
+        

@@ -1,0 +1,36 @@
+        /*
+La calificación final de un estudiante de informatica se calcula
+con la base a las calificaciones de cuatro aspectos de su rendimiento
+academico:
+
+participación - primer examen parcial - Segundo examen parcial - examen final.
+
+Sabiendo que las calificaciones anteriores entran a la calificación final con ponderaciones del 10% 25% 25% y 40% 
+
+Hacer un programa que calcule e  imprima la calificacion final obtenida por un estiante.        
+       
+       */ 
+        
+        Scanner Entrada = new Scanner(System.in);
+        float participacion, pri_exa_final, Seg_exa_final, Exa_Final, Suma;
+        
+        System.out.println("Favor ingrese su nota de participación: ");
+        participacion = Entrada.nextFloat();
+        System.out.println("Favor ingrese la nota de su primer examen final: ");
+        pri_exa_final = Entrada.nextFloat();
+        System.out.println("Favor ingrese la segunda nota del examen final: ");
+        Seg_exa_final = Entrada.nextFloat();
+        System.out.println("Favor ingrese su nota del examen final: ");
+        Exa_Final = Entrada.nextFloat();
+        
+        // Sacamos los calculos 
+        participacion *= 0.10f;
+        pri_exa_final *= 0.25f;
+        Seg_exa_final *= 0.25f;
+        Exa_Final *= 0.40f;
+        
+        //Sumamos las notas.
+        Suma = participacion+pri_exa_final+Seg_exa_final+Exa_Final;
+        
+        
+        System.out.println("su calificación final es de: "+Suma);

@@ -1,0 +1,20 @@
+/*Pedir un número entre 0 y 99 999 y decir cuantas cifras tiene */
+
+    int Num;
+    
+    Num = Integer.parseInt(JOptionPane.showInputDialog("Favor ingrese un número: "));
+    
+    if (Num < 10){
+        JOptionPane.showMessageDialog(null, "El número tiene una cifra");
+    }
+    else if (Num < 100){
+        JOptionPane.showMessageDialog(null, "El número tiene dos cifras");    
+    }
+    else if (Num < 1000){
+        JOptionPane.showMessageDialog(null, "El número tiene tres cifras");    
+    }
+    else if (Num < 10000){
+        JOptionPane.showMessageDialog(null, "El número tiene cuatro cifras");    
+    }
+    else {
+        JOptionPane.showMessageDialog(null, "El número tiene cinco cifras");

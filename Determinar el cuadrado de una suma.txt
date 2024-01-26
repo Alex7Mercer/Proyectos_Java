@@ -1,0 +1,21 @@
+        /*
+        hacer un programa que calcule el cuadrado de una suma.
+        Formula
+        //(a+b) = a2 + b2 + 2ab;
+       */ 
+        
+        Scanner Entrada = new Scanner(System.in);
+        double Base, Altura, calculo;
+        
+               
+                
+                
+        System.out.println("Ingrese el valor de la base: ");
+        Base = Entrada.nextDouble();
+        
+        System.out.println("Favor ingrese el valor de la Altura: ");
+        Altura = Entrada.nextDouble();
+        
+        calculo = Math.pow(Base,2) + Math.pow(Altura,2) + (2*Base*Altura);
+        
+        System.out.println("\nEl resultado es: "+calculo);

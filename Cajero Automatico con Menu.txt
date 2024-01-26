@@ -1,0 +1,38 @@
+       /* hacer un programa que simule un cajero automatico con un saldo inicial de 1000 dolares, con el siguiente menu de opciones: 
+       1. ingrese dinero a la cuenta.
+       2. retirar dinero de la cuenta.
+       
+       3. salir
+       */
+       
+       final int saldo_inicial = 1000;
+       int Opcion, Retiro;
+       float Ingreso, Saldo_Actual;
+       
+       
+       Opcion = Integer.parseInt(JOptionPane.showInputDialog("Bienvenido a su cajero Automatico\n\n"
+               + "1. Ingresar dinero a la cuenta:\n"
+               + "2. retirar dinero de la cuenta:\n"
+               + "3. salir"));
+       
+       
+       switch(Opcion){
+           case 1: Ingreso = Float.parseFloat(JOptionPane.showInputDialog(null, "Favor ingrese la cantidad que desea depositar: "));
+           Saldo_Actual = saldo_inicial + Ingreso;
+           JOptionPane.showMessageDialog(null, "Su nuevo saldo es de: "+Saldo_Actual);
+                break;
+           case 2: Retiro = Integer.parseInt(JOptionPane.showInputDialog(null, "Favor ingrese la cantidad que desea retirar: "));
+                if(Retiro>saldo_inicial){
+                    JOptionPane.showMessageDialog(null, "El valor ingresado supera el saldo con el que cuentas");      
+                }
+                else{
+                    Saldo_Actual = saldo_inicial-Retiro;
+                    JOptionPane.showMessageDialog(null, "Su nuevo saldo es de: " +Saldo_Actual);   
+                }
+                break;
+           case 3: JOptionPane.showMessageDialog(null, "Un placer servirle");
+                break;
+           default: JOptionPane.showMessageDialog(null, "Error, haz ingresado una opción no valida");
+                break;
+               
+       }

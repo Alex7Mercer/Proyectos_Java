@@ -1,0 +1,32 @@
+        /* 
+       Pedir una nota de 0 a 10 y mostrarla de la forma 
+        1 - 4 insuficiente.
+        5 suficiente.
+        6 estas bien 
+        7 - 8 Notable
+        9 - 10 sobresaliente
+        */
+        
+        int nota;
+        
+        nota = Integer.parseInt(JOptionPane.showInputDialog("Favor ingrese su nota: "));
+        
+        switch(nota){
+            case 0:
+            case 1:
+            case 2:
+            case 3:
+            case 4: JOptionPane.showMessageDialog(null, "Lo sentimos tu nota es insuficiente" );
+                break;
+            case 5: JOptionPane.showMessageDialog(null, "Su nota es suficiente" );
+                break;
+            case 6: JOptionPane.showMessageDialog(null, "Estas bien !Quiero no seas del promedio, se que puedes dar más¡ " );
+                break;
+            case 7: 
+            case 8: JOptionPane.showMessageDialog(null, "Tu nota es Notable" );
+                break;
+            case 9:
+            case 10: JOptionPane.showMessageDialog(null, "Eres  un crack!! Tu nota es Sobresaliente" );
+                break;
+            default: JOptionPane.showMessageDialog(null, "El valor que has ingresado  no es correcto, tu nota va de 0 a 10");
+            }

@@ -1,0 +1,16 @@
+/* Ejercicio 3. Leer números hasta que se introduza  un cero (0), Para cada uno indicar
+        si es par o es impar.       
+*/
+       int numero, Resultado;
+       
+       numero = Integer.parseInt(JOptionPane.showInputDialog("Favor ingrese un número: "));
+       
+       while (numero != 0){
+           if (numero%2 == 0) // Si el reciduo es cero. 
+               System.out.println("El número "+numero+" Es positivo");
+           else{
+               System.out.println("El numero ingresado es negativo");
+           }
+           numero = Integer.parseInt(JOptionPane.showInputDialog("Favor ingrese otro número: "));
+          
+               }

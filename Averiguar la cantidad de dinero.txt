@@ -1,0 +1,21 @@
+    public static void main(String[] args) {
+        /*
+        Guillermo tiene N Dolares, 
+        Luis tiene la mitad de lo que posee Guillermo.
+        Juan tiene la Mitad de lo que posee Luis y Guillermo juntos.
+        
+        Hacer un programa que calcule e imprima la cantidad de dinero que tienen los tres.
+        
+|       */
+        
+        Scanner Entrada = new Scanner(System.in);
+        float Din_Guillermo, Din_Luis, Din_Juan, Suma;
+        
+        System.out.println("Ingrese la cantidad que gana Guillermo: ");
+        Din_Guillermo = Entrada.nextFloat();
+        Din_Luis = Din_Guillermo/2;
+        Din_Juan = (Din_Guillermo+Din_Luis)/2;
+        Suma = Din_Juan+Din_Luis+Din_Guillermo;
+        
+        System.out.println("El dinero que gana Guillermo es: "+Din_Guillermo);
+        System.out.println("La cantidad de dinero que gana Luis, Juan y Guillermo es de: "+Suma);

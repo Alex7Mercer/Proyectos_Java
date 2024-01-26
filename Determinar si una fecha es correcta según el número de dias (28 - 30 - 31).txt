@@ -1,0 +1,28 @@
+       /* Pedir el día, mes y año de una fecha e indicar si la fecha es correcta.
+        teniendo en cuanta los meses de 28, 30 y 31 dias.
+		
+		|| >> esto es el operador or (esto lo usamos cuando queremos alguna de nuestra condiciones (ver linea 20))
+		&& >> Este es el operador y "ademas" (Esto lo  usamos cuando queremos que se cumpla mas de una condicioón para que sea valida) 
+		
+        */
+        
+        int día, mes, año; 
+        
+        día = Integer.parseInt(JOptionPane.showInputDialog("Favor ingrese el día: "));
+        mes = Integer.parseInt(JOptionPane.showInputDialog("Favor ingrese el mes: "));       
+        año = Integer.parseInt(JOptionPane.showInputDialog("Favor ingrese el año: "));       
+
+        if (año==0) {
+            JOptionPane.showMessageDialog(null, "Fecha incorrecta");   
+        }        
+        else if ((mes == 2) && (día>=1 && día<=28)){ // declaración para mes de 28 dias.
+            JOptionPane.showMessageDialog(null, "Fecha correcta");
+        }
+        else if ((mes==2 || mes==4 || mes==6 || mes==9 || mes==11) && (día>=1 && día<=30)) { // declaración para mes de 30 dias.
+            JOptionPane.showMessageDialog(null, "Fecha correcta");
+        }
+        else if ((mes==3 || mes==5 || mes==7 || mes==8 || mes==10 || mes==11 ) && (día>=1 && día<=31)) { // declaración para mes de 31 dias.
+            JOptionPane.showMessageDialog(null, "Fecha correcta");
+        }    
+        else{
+             JOptionPane.showMessageDialog(null, "Fecha incorrecta"); 

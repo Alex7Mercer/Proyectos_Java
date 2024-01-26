@@ -1,0 +1,26 @@
+        /*
+        En Megaplaza se hace un 20% de descuento a los clientes cuya compra supere
+        los $300. ¿cual sera la cantidad que pagara una persona por su compra ?
+       
+        */
+        
+        float Valor_compra, Descuento;
+        
+        
+        Valor_compra = Float.parseFloat(JOptionPane.showInputDialog(null, "Favor ingrese "
+                + "el valor de su compra la cual debe ser mayor a 300 mil para aplicar descuento del 20%: "));
+              
+        
+        if (Valor_compra > 300){
+            Descuento = Valor_compra * 0.20f;
+            Valor_compra -= Descuento;
+            
+            JOptionPane.showMessageDialog(null, "Tu valor a pagar es: " +Valor_compra);
+            JOptionPane.showMessageDialog(null, "Te felicitamos por aplicar a nuestro descuento");
+        }
+        else {
+        JOptionPane.showMessageDialog(null, "Lo sentimos tu compra debe superar los 300 mil por ende "
+                + "tu valor a pagar es de: " +Valor_compra);
+            //  JOptionPane.showInputDialog("Lo sentimos solo puedes aplicar al descuento del 20% tras comprar mayores de 300 mil");
+            
+        }

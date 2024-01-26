@@ -1,0 +1,33 @@
+       /* pedir tres números y mostrarlos ordenados de mayor a menor. */
+       /* El simbolo (&&) significa "y a demas" haz y esto y adema*/
+        int Num1, Num2, Num3; 
+        
+        
+        
+        // Solicitamos que nos ingresen los tres números los cuales debemos organizar de mayor a menor.
+        Num1 = Integer.parseInt(JOptionPane.showInputDialog("Favor ingrese el primer numero: " )); 
+        Num2 = Integer.parseInt(JOptionPane.showInputDialog("Favor ingrese el segundo numero: " ));
+        Num3 = Integer.parseInt(JOptionPane.showInputDialog("Favor ingrese el tercer numero: " ));
+        
+        if ((Num1>Num2) && (Num2>Num3)){
+                JOptionPane.showMessageDialog(null, "orden: "+Num1+" - "+Num2+" - "+Num3);
+        }
+        else if  
+            ((Num1>Num3) && (Num3>Num2)){
+                JOptionPane.showMessageDialog(null, "orden: "+Num1+" - "+Num3+" - "+Num2);    
+        }
+        else if  
+            ((Num2>Num1) && (Num1>Num3)){
+                JOptionPane.showMessageDialog(null, "orden: "+Num2+" - "+Num1+" - "+Num3);
+        }        
+        else if  
+            ((Num2>Num3) && (Num3>Num1)){
+                JOptionPane.showMessageDialog(null, "orden: "+Num2+" - "+Num3+" - "+Num1);        
+        }
+        else if  
+            ((Num3>Num1) && (Num1>Num2)){
+                JOptionPane.showMessageDialog(null, "orden: "+Num3+" - "+Num1+" - "+Num2);
+        }                
+        else { 
+                JOptionPane.showMessageDialog(null, "orden: "+Num3+" - "+Num2+" - "+Num1);
+        }
